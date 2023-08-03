@@ -1,0 +1,209 @@
+/*  General styling*/
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.zone {
+    padding:30px;
+    
+    cursor:pointer;
+   
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 1s linear;
+    background-color: #292828;
+}
+
+.zone:hover {
+    -webkit-box-shadow: black 0px 5px 15px; 
+    -moz-box-shadow:  black 0px 5px 15px;
+    -o-box-shadow: black 0px 5px 15px;
+    box-shadow: black 0px 5px 15px;
+}
+
+/*  Header section */
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+    background-color: #292828;
+}
+
+li{
+    padding: 20px;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+.scroll{
+    position: fixed;
+    top:0;
+    width: 100%;
+   
+}
+
+/*  The cover photo styling*/
+.container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cover{
+    width: 23rem;
+    border-radius: 10px;
+}
+ 
+p{
+    color: white;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box img{
+    height: 80%;
+    width: 200px;
+    margin: 5px;
+}
+.box{
+    height: fit-content;
+}
+
+.box:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.box > img{
+    width: 100%;
+}
+
+.box{
+    background-color: #292828;
+    margin: 10px;
+    height: 300px;
+}
+
+.cards-container{
+    padding: 20px;
+    margin-top: 100px;
+}
+
+
+
+/*  The about page styling*/
+.about{
+    
+    margin: 10px;
+    padding: 20px;
+   
+
+}
+
+.about  img{
+    width: 50vw;
+    height: 80vh;
+    border-radius: 25px;
+
+}
+
+.about p{
+    color: black;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sisi{
+    display: flex;
+}
+
+
+span{
+    font-size: 2.4rem;
+}
+/*  General styling*/
+footer{
+    text-align: center;
+    color: #292828;
+}
+
+/* Re-sizing of the screen */
+
+@media only screen and (max-width: 600px) {
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+
+    }
+    
+}
+
+/*  General  color gradient for any class we choose */
+.green{
+    
+    background: -moz-linear-gradient(top, rgb(121, 200, 121) 0%, rgb(165,201,86) 100%);
+    background: -webkit-linear-gradient(top, #56B870 0%, rgb(165,201,86) 100%);
+    background: -o-linear-gradient(top, #56B870 0%, rgb(165,201,86) 100%); 
+    background: -ms-linear-gradient(top, #56B870 0%, rgb(165,201,86) 100%);
+    background: linear-gradient(top, #56B870 0%, rgb(165,201,86) 100%); 
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, pink 0%, red 100%);
+    background: -webkit-linear-gradient(top, pink 0%, red 100%); 
+    background: -o-linear-gradient(top,pink 0%, red 100%); 
+    background: -ms-linear-gradient(top, pink 0%, red 100%);
+    background: linear-gradient(top, pink 0%, red 100%); 
+}
+
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA;
+    background: -moz-linear-gradient(right,  brown 0%,  black 100%); 
+    
+    background: -webkit-linear-gradient(right,  brown 0%,  black 100%);
+    background: -o-linear-gradient(right,  brown 0%,   black 100%); 
+    background: -ms-linear-gradient(right,  brown 0%,   black 100%);
+    background: linear-gradient(right, brown 0%,  black 100%); 
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #292828;
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); 
+       
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+}
+
+
